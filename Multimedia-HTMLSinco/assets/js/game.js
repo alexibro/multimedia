@@ -51,7 +51,7 @@ var game = {
 	
 		//"Kindergarten" by Gurdonark
 		//http://ccmixter.org/files/gurdonark/26491 is licensed under a Creative Commons license
-		game.backgroundMusic = loader.loadSound('assets/audio/gurdonark-kindergarten');
+		game.backgroundMusic = loader.loadSound('assets/audio/dances_with_koalas');
 
 		game.slingshotReleasedSound = loader.loadSound("assets/audio/released");
 		game.bounceSound = loader.loadSound('assets/audio/bounce');
