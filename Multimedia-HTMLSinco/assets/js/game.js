@@ -51,7 +51,7 @@ var game = {
 	
 		//"Kindergarten" by Gurdonark
 		//http://ccmixter.org/files/gurdonark/26491 is licensed under a Creative Commons license
-		game.backgroundMusic = loader.loadSound('assets/audio/gurdonark-kindergarten');
+		game.backgroundMusic = loader.loadSound('assets/audio/dances_with_koalas');
 
 		game.slingshotReleasedSound = loader.loadSound("assets/audio/released");
 		game.bounceSound = loader.loadSound('assets/audio/bounce');
@@ -181,6 +181,7 @@ var game = {
 		var radiusSquared = Math.pow(game.currentHero.GetUserData().radius,2);		
 		return (distanceSquared<= radiusSquared);	
 	},
+	decelerating:0,
 	handlePanning:function(){
 		   if(game.mode=="intro"){		
 			   if(game.panTo(700)){
@@ -223,11 +224,18 @@ var game = {
 			var heroX = game.currentHero.GetPosition().x*box2d.scale;
 			game.panTo(heroX);
 
-			//Y esperar hasta que deja de moverse o está fuera de los límites
-			if(!game.currentHero.IsAwake() || heroX<0 || heroX >game.currentLevel.foregroundImage.width ){
+			//Y esperar hasta que deja de moverse, está fuera de los límites o se mueve lentamente durante demasiado tiempo
+			if(game.currentHero.m_linearVelocity.x<2 && game.currentHero.m_xf.position.y>13) {
+				game.decelerating++;
+			} else {
+				game.decelerating = 0;
+			}
+			if(!game.currentHero.IsAwake() || heroX<0 || heroX >game.currentLevel.foregroundImage.width || game.decelerating>350){
 				// Luego borra el viejo héroe
 				box2d.world.DestroyBody(game.currentHero);
 				game.currentHero = undefined;
+				// Resetea el numero de veces que se desplaza lentamente
+				game.decelerating = 0;
 				// y carga el siguiente héroe
 				game.mode = "load-next-hero";
 			}
@@ -438,6 +446,97 @@ var levels = {
 				{type:"hero", name:"shuriken",x:30,y:415},
 				{type:"hero", name:"sword",x:80,y:405},
 				{type:"hero", name:"axe",x:140,y:405},
+			]
+		},
+		{   // Tercer nivel
+			foreground:'desert-foreground',
+			background:'clouds-background',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+	
+				{type:"block", name:"glass", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"wood", x:770,y:317.5,width:100,height:25},				
+
+				{type:"block", name:"glass", x:800,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:720,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:640,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:670,y:192.5,width:100,height:25},
+				{type:"block", name:"wood", x:770,y:192.5,width:100,height:25},		
+
+				{type:"villain", name:"femaleZombie",x:715,y:155,calories:590},
+				{type:"villain", name:"maleZombie",x:670,y:405,calories:420},
+				{type:"villain", name:"dinnosaur",x:765,y:400,calories:150},
+
+				{type:"villain", name:"femaleZombie",x:765,y:270,calories:150},
+				{type:"villain", name:"maleZombie",x:680,y:270,calories:150},
+
+				{type:"hero", name:"axe",x:30,y:415},
+				{type:"hero", name:"sword",x:80,y:405},
+				{type:"hero", name:"shuriken",x:140,y:405},
+			]
+		},
+		{   // Cuarto nivel
+			foreground:'desert-foreground',
+			background:'clouds-background',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+	
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:845,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:645,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:292.5,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:292.5,width:100,height:25},				
+
+				{type:"villain", name:"maleZombie",x:670,y:405,calories:420},
+				{type:"villain", name:"dinnosaur",x:765,y:400,calories:150},
+
+				{type:"villain", name:"femaleZombie",x:765,y:270,calories:150},
+				{type:"villain", name:"maleZombie",x:680,y:270,calories:150},
+
+				{type:"hero", name:"axe",x:30,y:415},
+				{type:"hero", name:"shuriken",x:80,y:405},
+				{type:"hero", name:"sword",x:140,y:405},
+			]
+		},
+		{   // Quinto nivel
+			foreground:'desert-foreground',
+			background:'clouds-background',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+	
+				{type:"block", name:"glass", x:550,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:770,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:670,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:645,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+
+				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+
+				{type:"villain", name:"femaleZombie",x:715,y:155,calories:590},
+				{type:"villain", name:"maleZombie",x:715,y:270,calories:590},
+				{type:"villain", name:"dinnosaur",x:860,y:400,calories:150},
+				{type:"villain", name:"maleZombie",x:575,y:405,calories:590},
+
+
+				{type:"hero", name:"shuriken",x:30,y:415},
+				{type:"hero", name:"axe",x:80,y:405},
+				{type:"hero", name:"shuriken",x:140,y:405},
 			]
 		}
 	],
@@ -792,7 +891,7 @@ var loader = {
 	itemLoaded:function(){
 		loader.loadedCount++;
 		$('#loadingmessage').html('Loaded '+loader.loadedCount+' of '+loader.totalCount);
-		if (loader.loadedCount === loader.totalCount){
+		if (loader.loadedCount >= loader.totalCount){
 			// Loader se ha cargado completamente. . .
 			loader.loaded = true;
 			// Ocultar la pantalla de carga
