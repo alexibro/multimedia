@@ -533,10 +533,11 @@ var levels = {
 				{type:"villain", name:"dinnosaur",x:860,y:400,calories:150},
 				{type:"villain", name:"maleZombie",x:575,y:405,calories:590},
 
-
+				
+				
 				{type:"hero", name:"shuriken",x:30,y:415},
 				{type:"hero", name:"axe",x:80,y:405},
-				{type:"hero", name:"shuriken",x:140,y:405},
+				{type:"hero", name:"rock",x:140,y:405},
 			]
 		}
 	],
@@ -654,6 +655,13 @@ var entities = {
 			shape:"circle",
 			radius:15,
 			density:2.0,
+			friction:0.5,
+			restitution:0.4,	
+		},
+		"rock":{
+			shape:"circle",
+			radius:30,
+			density:1.25,
 			friction:0.5,
 			restitution:0.4,	
 		},
