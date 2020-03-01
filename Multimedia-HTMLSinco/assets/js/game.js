@@ -56,8 +56,8 @@ var game = {
 		game.slingshotReleasedSound = loader.loadSound("assets/audio/released");
 		game.bounceSound = loader.loadSound('assets/audio/bounce');
 		game.breakSound = {
-			"glass":loader.loadSound('assets/audio/glassbreak'),
-			"wood":loader.loadSound('assets/audio/woodbreak')
+			"fire-pannel":loader.loadSound('assets/audio/glassbreak'),
+			"dirt-pannel":loader.loadSound('assets/audio/woodbreak')
 		};
 
 
@@ -396,18 +396,18 @@ var levels = {
 	// Datos de nivel
 	data:[
 	 {   // Primer nivel 
-		foreground:'desert-foreground',
-		background:'clouds-background',
+		foreground:'burning-hell-foreground',
+		background:'fire-background',
 		entities:[
 			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-			{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+			{type:"ground", name:"dirt-pannel", x:185,y:390,width:30,height:80,isStatic:true},
 
-			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},								
+			{type:"block", name:"dirt-pannel", x:520,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"fire-pannel", x:520,y:280,angle:90,width:100,height:25},								
 			{type:"villain", name:"femaleZombie",x:520,y:205,calories:590},
 
-			{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"glass", x:620,y:280,angle:90,width:100,height:25},								
+			{type:"block", name:"dirt-pannel", x:620,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"fire-pannel", x:620,y:280,angle:90,width:100,height:25},								
 			{type:"villain", name:"maleZombie", x:620,y:205,calories:420},				
 
 			{type:"hero", name:"sword",x:80,y:405},
@@ -415,21 +415,21 @@ var levels = {
 		]
 	 },
 		{   // Segundo nivel
-			foreground:'desert-foreground',
-			background:'clouds-background',
+			foreground:'burning-hell-foreground',
+			background:'fire-background',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+				{type:"ground", name:"dirt-pannel", x:185,y:390,width:30,height:80,isStatic:true},
 	
-				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+				{type:"block", name:"dirt-pannel", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"dirt-pannel", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"dirt-pannel", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"fire-pannel", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"fire-pannel", x:770,y:317.5,width:100,height:25},				
 
-				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+				{type:"block", name:"fire-pannel", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"fire-pannel", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"dirt-pannel", x:720,y:192.5,width:100,height:25},	
 
 				{type:"villain", name:"femaleZombie",x:715,y:155,calories:590},
 				{type:"villain", name:"maleZombie",x:670,y:405,calories:420},
@@ -494,13 +494,13 @@ var levels = {
 
 var entities = {
 	definitions:{
-		"glass":{
+		"fire-pannel":{
 			fullHealth:100,
 			density:2.4,
 			friction:0.4,
 			restitution:0.15,
 		},
-		"wood":{
+		"dirt-pannel":{
 			fullHealth:500,
 			density:0.7,
 			friction:0.4,
