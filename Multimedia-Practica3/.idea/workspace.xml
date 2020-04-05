@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="675e3a74-6f2e-45c7-b1fc-313bc6c3ae97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/breakpoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/browser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery.scrolly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/base/_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_actions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_arrow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_feature-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_gallery.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/components/_table.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/layout/_wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/libs/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/libs/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/libs/_html-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/libs/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/libs/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/libs/_vendor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/fulls/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gallery/thumbs/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pic02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1a7MeyglM6W6PqvwMr7te9ZSDwy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shyfu\OneDrive\Escritorio\URJC\AÑO 4\MULTIMEDIA\multimedia\Multimedia-Practica3" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="675e3a74-6f2e-45c7-b1fc-313bc6c3ae97" name="Default Changelist" comment="" />
+      <created>1586082277610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586082277610</updated>
+      <workItem from="1586082278785" duration="1343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
