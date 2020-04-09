@@ -187,7 +187,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 600;
-		color: yellow;
+		color: black;
 	}
 
 	em, i {
@@ -3250,6 +3250,7 @@ input, select, textarea {
 			}
 
 			#wrapper section > header {
+				color: yellow;
 				grid-area: header;
 				justify-self: end;
 				text-align: right;
@@ -3272,6 +3273,7 @@ input, select, textarea {
 				}
 
 			#wrapper section > .content {
+				color: black;
 				grid-area: content;
 				max-width: 60rem;
 				position: relative;
