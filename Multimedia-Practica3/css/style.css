@@ -35,16 +35,12 @@ a, .button {
 }
 
 a:focus, .button:focus, button:focus {
-    text-decoration: none;
-    outline: none
+    outline: none;
+    color: #000;
+    font-weight: bold!important;
 }
 
-a:focus {
-    color: #fff;
-    text-decoration: none
-}
-
-a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
+a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
     text-decoration: none;
     color: #000
 }
@@ -86,10 +82,6 @@ label {
     cursor: pointer;
     font-size: 14px;
     font-weight: 400
-}
-
-.focus-button:focus {
-    color: red;
 }
 
 *::-moz-selection {
