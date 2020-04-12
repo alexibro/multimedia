@@ -491,15 +491,20 @@ h3 {
 }
 
 @media (max-width: 767px) {
-    .header-area .main-header-area .logo-img {
+    .header-area .main-header-area{
         padding-left: 20px
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .header-area .main-header-area .logo-img {
+    .header-area .main-header-area{
         padding-left: 20px
     }
+}
+
+.logo-img {
+    height: 4rem;
+    width: 7rem
 }
 
 .header-area .main-header-area .main-menu {
