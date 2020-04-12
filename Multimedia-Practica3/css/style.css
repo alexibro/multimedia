@@ -42,7 +42,8 @@ a:focus, .button:focus, button:focus {
 
 a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
     text-decoration: none;
-    color: #000
+    color: #000;
+    font-weight: bold!important;
 }
 
 a, button {
@@ -551,10 +552,6 @@ h3 {
     .header-area .main-header-area .main-menu ul li a i {
         display: none !important
     }
-}
-
-.header-area .main-header-area .main-menu ul li a:hover {
-    color: #808080
 }
 
 .header-area .main-header-area .main-menu ul li .submenu {
