@@ -1860,6 +1860,21 @@ h3 {
     margin-bottom: 20px
 }
 
+.embed-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 75%;
+    margin-bottom: 10%;
+}
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .form-contact label {
     font-size: 14px
 }
